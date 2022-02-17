@@ -1,0 +1,1 @@
+scoreboard objectives add P-Talk-Vil minecraft.custom:talked_to_villager
