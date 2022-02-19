@@ -1,1 +1,2 @@
-scoreboard objectives add P-Talk-Vil minecraft.custom:talked_to_villager
+team add P-Never-Col
+team modify P-Never-Col collisionRule never
