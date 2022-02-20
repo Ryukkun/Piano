@@ -5,7 +5,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:villager",
-            "nbt": "{Tags:[\"P-D\",\"P-1\"]}"
+            "nbt": "{Tags:[\"P-1D\"]}"
           }
         }
       },
@@ -14,7 +14,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:villager",
-            "nbt": "{Tags:[\"P-D\",\"P-1\"]}"
+            "nbt": "{Tags:[\"P-1D\"]}"
           }
         }
       }
