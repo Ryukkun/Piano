@@ -124,6 +124,35 @@ team join P-Never-Col @e[tag=P-Vil-Setup]
 
 
 
+# scoreboard 後々必要になっちゃった --------------------
+scoreboard players set @e[tag=P-1,tag=P-F+,distance=..10] P-Num 5
+scoreboard players set @e[tag=P-1,tag=P-G,distance=..10] P-Num 10
+scoreboard players set @e[tag=P-1,tag=P-G+,distance=..10] P-Num 15
+scoreboard players set @e[tag=P-1,tag=P-A,distance=..10] P-Num 20
+scoreboard players set @e[tag=P-1,tag=P-A+,distance=..10] P-Num 25
+scoreboard players set @e[tag=P-1,tag=P-B,distance=..10] P-Num 30
+scoreboard players set @e[tag=P-1,tag=P-C,distance=..10] P-Num 40
+scoreboard players set @e[tag=P-1,tag=P-C+,distance=..10] P-Num 45
+scoreboard players set @e[tag=P-1,tag=P-D,distance=..10] P-Num 50
+scoreboard players set @e[tag=P-1,tag=P-D+,distance=..10] P-Num 55
+scoreboard players set @e[tag=P-1,tag=P-E,distance=..10] P-Num 60
+scoreboard players set @e[tag=P-1,tag=P-F,distance=..10] P-Num 70
+scoreboard players set @e[tag=P-2,tag=P-F+,distance=..10] P-Num 105
+scoreboard players set @e[tag=P-2,tag=P-G,distance=..10] P-Num 110
+scoreboard players set @e[tag=P-2,tag=P-G+,distance=..10] P-Num 115
+scoreboard players set @e[tag=P-2,tag=P-A,distance=..10] P-Num 120
+scoreboard players set @e[tag=P-2,tag=P-A+,distance=..10] P-Num 125
+scoreboard players set @e[tag=P-2,tag=P-B,distance=..10] P-Num 130
+scoreboard players set @e[tag=P-2,tag=P-C,distance=..10] P-Num 140
+scoreboard players set @e[tag=P-2,tag=P-C+,distance=..10] P-Num 145
+scoreboard players set @e[tag=P-2,tag=P-D,distance=..10] P-Num 150
+scoreboard players set @e[tag=P-2,tag=P-D+,distance=..10] P-Num 155
+scoreboard players set @e[tag=P-2,tag=P-E,distance=..10] P-Num 160
+scoreboard players set @e[tag=P-2,tag=P-F,distance=..10] P-Num 170
+scoreboard players set @e[tag=P-2,tag=P-F++,distance=..10] P-Num 175
+
+
+
 
 # =====================================================
 tag @e[tag=P-Setup,distance=..10] remove P-Setup
