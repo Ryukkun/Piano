@@ -120,7 +120,7 @@ execute as @e[tag=P-Setup,distance=..10] at @s rotated as @e[tag=P-Setup,tag=P-C
 
 
 
-# scoreboard 後々必要になっちゃった --------------------
+# scoreboard 後々必要になっちゃった (いうて使わんかった)--------------------
 scoreboard players set @e[tag=P-Forward,tag=P-1F+,distance=..10] P-Num 5
 scoreboard players set @e[tag=P-Forward,tag=P-1G,distance=..10] P-Num 10
 scoreboard players set @e[tag=P-Forward,tag=P-1G+,distance=..10] P-Num 15
