@@ -120,35 +120,6 @@ execute as @e[tag=P-Setup,distance=..10] at @s rotated as @e[tag=P-Setup,tag=P-C
 
 
 
-# 当たり判定用 villager     ---------------------------
-execute as @e[tag=P-Setup,tag=P-White,tag=!P-None,distance=..10] at @s run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Tags:["P-Vil","P-Vil-Setup"],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:2000000000,ShowParticles:0b}],Health:0.0000001f,Attributes:[{Name:generic.max_health,Base:0.0000001}]}
-execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Tags:["P-Vil","P-Vil-Setup"],Age:-2000000000,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:2000000000,ShowParticles:0b}],Health:0.0000001f,Attributes:[{Name:generic.max_health,Base:0.0000001}]}
-execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Tags:["P-Vil","P-Vil-Setup"],Age:-2000000000,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:2000000000,ShowParticles:0b}],Health:0.0000001f,Attributes:[{Name:generic.max_health,Base:0.0000001}]}
-
-
-
-# Villager Tags     ----------------------------------
-execute as @e[tag=P-Vil-Setup,distance=..10] at @s run data modify entity @s Tags append from entity @e[type=armor_stand,tag=P-Setup,distance=..0.0001,limit=1] Tags[]
-tag @e[tag=P-Vil-Setup,distance=..10] remove P-Setup
-
-
-
-# Villager 判定修正     -------------------------------
-    # 白鍵
-execute as @e[tag=P-Vil-Setup,tag=P-1,tag=P-White] at @s run tp ~ ~-0.26 ~
-execute as @e[tag=P-Vil-Setup,tag=P-2,tag=P-White] at @s run tp ~ ~0.05 ~
-
-    # 黒鍵
-execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run tp @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] ^-0.07 ^0.145 ^-0.07
-execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run tp @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] ^0.07 ^0.145 ^-0.07
-
-
-
-# villager team     ----------------------------------
-team join P-Never-Col @e[tag=P-Vil-Setup]
-
-
-
 # scoreboard 後々必要になっちゃった --------------------
 scoreboard players set @e[tag=P-Forward,tag=P-1F+,distance=..10] P-Num 5
 scoreboard players set @e[tag=P-Forward,tag=P-1G,distance=..10] P-Num 10
@@ -205,11 +176,12 @@ scoreboard players set @e[tag=P-Back,tag=P-2E,distance=..10] P-Num 161
 scoreboard players add $Base P-CNum 1
 scoreboard players operation @e[tag=P-Setup,distance=..0.0001] P-CNum = $Base P-CNum
 scoreboard players operation @e[tag=P-Setup,distance=..10] P-CNum = @e[tag=P-Setup,distance=..0.0001] P-CNum
-scoreboard players operation @e[tag=P-Vil-Setup,distance=..10] P-CNum = @e[tag=P-Setup,distance=..0.0001] P-CNum
 
+
+# 当たり判定用 village
+execute as @e[tag=P-Setup,distance=..10] run function piano:villager/check
 
 
 
 # =====================================================
 tag @e[tag=P-Setup,distance=..10] remove P-Setup
-tag @e[tag=P-Vil-Setup,distance=..10] remove P-Vil-Setup
