@@ -5,7 +5,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:villager",
-            "nbt": "{Tags:[\"P-2F\"]}"
+            "nbt": "{Tags:[\"P-3F\"]}"
           }
         }
       },
@@ -14,7 +14,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:villager",
-            "nbt": "{Tags:[\"P-2F\"]}"
+            "nbt": "{Tags:[\"P-3F\"]}"
           }
         }
       }
@@ -26,7 +26,7 @@
       ]
     ],
     "rewards": {
-      "function": "piano:click/2/f"
+      "function": "piano:click/2/3f_bord"
     }
   }
   
