@@ -1,8 +1,18 @@
-execute unless entity @e[tag=P-Vil,distance=..0.0001] run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Tags:["P-Vil","P-Vil-Setup"],Age:-2000000000,ActiveEffects:[{Id:14b,Amplifier:0b,Duration:2000000000,ShowParticles:0b}],Health:0.0000001f,Attributes:[{Name:generic.max_health,Base:0.0000001}]}
+# そこに 村人は いるんか？
+execute unless entity @e[tag=P-Vil,distance=..0.0001] run tag @s add P-NoVil
 
+# summon villager
+execute as @s[tag=P-NoVil] run scoreboard players add @s P-Vil-Y 1
+execute as @s[tag=P-NoVil] run scoreboard players operation $Temp P-Vil-Y = @s P-Vil-Y
+execute as @s[tag=P-NoVil] run function piano:villager/black-summon
+
+# Tags , Score
 data modify entity @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] Tags append from entity @s Tags[]
 team join P-Never-Col @e[tag=P-Vil-Setup,distance=..0.0001]
 scoreboard players operation @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] P-Num = @s P-Num
 scoreboard players operation @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] P-CNum = @s P-CNum
 
+
+#=============================================================================
 tag @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] remove P-Vil-Setup
+tag @s remove P-NoVil
