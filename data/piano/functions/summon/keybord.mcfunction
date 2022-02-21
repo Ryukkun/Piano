@@ -2,20 +2,20 @@
 #   [P-Bord]
 #
 #       |--------------------------------------------------------------------------------------------------------------------|
-#       |        | P-2F+ |       | P-2G+ |       | P-2A+ |       |       | P-2C+ |       | P-2C+ |           |               |
+#       |        | P-2F+ |       | P-2G+ |       | P-2A+ |       |       | P-2C+ |       | P-2D+ |           |               |
 #       |  P-1F  |  106  |  P-2G |  116  |  P-2A |  126  |  P-2B |  P-2C |  146  |  P-2C |  156  |   P-2E    |     P-2F++    |
 #       |        |-------|       |-------|       |-------|       |       |-------|       |-------|           |               |
-#       |   81   | P-2F+ |  111  | P-2G+ |  121  | P-2A+ |  131  |  141  | P-2C+ |  151  | P-2C+ |    161    |      171      |
+#       |   81   | P-2F+ |  111  | P-2G+ |  121  | P-2A+ |  131  |  141  | P-2C+ |  151  | P-2D+ |    161    |      171      |
 #  P-1  |        |  105  |       |  115  |       |  125  |       |       |  145  |       |  155  |           |               |
 #       | - - - - ――――――― - - - - ――――――― - - - - ――――――― - - - - - - - - ――――――― - - - - ――――――― - - - - - - - - - - - - - -|
 #       |    P-2F    |     P-2G      |     P-2A      |   P-2B    |   P-2C    |     P-2D      |     P-2E      |     P-2F      |
 #       |     80     |      110      |      120      |    130    |    140    |      150      |      160      |      170      |
 #       |====================================================================================================================|
-#       |        | P-1F+ |       | P-1G+ |       | P-1A+ |       |       | P-1C+ |       | P-1C+ |           |               |
-#       | P-None |   6   |  P-1G |   16  |  P-1A |   26  |  P-1B |  P-1C |   46  |  P-1C |   46  |   P-1E    |     P-1F      |
+#       |        | P-1F+ |       | P-1G+ |       | P-1A+ |       |       | P-1C+ |       | P-1D+ |           |               |
+#       | P-None |   6   |  P-1G |   16  |  P-1A |   26  |  P-1B |  P-1C |   46  |  P-1C |   56  |   P-1E    |     P-1F      |
 #       |        |-------|       |-------|       |-------|       |       |-------|       |-------|           |               |
-#       |   /    | P-1F+ |   11  | P-1G+ |   21  | P-1A+ |   31  |   41  | P-1C+ |   51  | P-1C+ |    61     |      71       |
-#  P-1  |        |   5   |       |   15  |       |   25  |       |       |   45  |       |   45  |           |               |
+#       |   /    | P-1F+ |   11  | P-1G+ |   21  | P-1A+ |   31  |   41  | P-1C+ |   51  | P-1D+ |    61     |      71       |
+#  P-1  |        |   5   |       |   15  |       |   25  |       |       |   45  |       |   55  |           |               |
 #       | - - - - ――――――― - - - - ――――――― - - - - ――――――― - - - - - - - - ――――――― - - - - ――――――― - - - - - - - - - - - - - -|
 #       |  P-Center  |     P-1G      |     P-1A      |   P-1B    |   P-1C    |     P-1D      |     P-1E      |     P-1F      |
 #       |   P-None   |      10       |      20       |    30     |    40     |      50       |      60       |      70       |
@@ -78,7 +78,7 @@ summon armor_stand ^-1.875 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-
 summon armor_stand ^-2.5 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2C"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
 summon armor_stand ^-3.125 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2D"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
 summon armor_stand ^-3.75 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2E"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-4.375 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
+summon armor_stand ^-4.375 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2F","P-3F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
 
 # 二段目 白鍵 奥
 summon armor_stand ^ ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-1F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
@@ -88,7 +88,7 @@ summon armor_stand ^-1.875 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P
 summon armor_stand ^-2.5 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2C"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
 summon armor_stand ^-3.125 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2D"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
 summon armor_stand ^-3.75 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2E"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-4.375 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2F++"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
+summon armor_stand ^-4.375 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2F++","P-3F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
 
 # 二段目 黒鍵 {FGAB:0.66,CDE:}1.25
 
