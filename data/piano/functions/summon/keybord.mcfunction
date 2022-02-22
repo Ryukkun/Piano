@@ -182,7 +182,7 @@ scoreboard players operation @e[tag=P-Setup,distance=..10] P-CNum = @e[tag=P-Set
 
 # particle
 execute at @e[tag=P-Setup,distance=..10] run particle minecraft:cloud ~ ~1.5 ~ 0.3 0 0.3 0.02 2 normal @a
-execute at @e[tag=P-White,tag=P-Setup,distance=..10] run particle minecraft:wax_off ~ ~1.8 ~ 0.3 0 0.3 1 1 normal @a
+execute at @e[tag=P-White,tag=P-Setup,distance=..10] run particle minecraft:crit ~ ~1.8 ~ 0.3 0 0.3 1 1 normal @a
 
 
 # =====================================================
