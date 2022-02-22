@@ -120,67 +120,69 @@ execute as @e[tag=P-Setup,distance=..10] at @s rotated as @e[tag=P-Setup,tag=P-C
 
 
 
-# scoreboard 後々必要になっちゃった (いうて使わんかった)--------------------
-scoreboard players set @e[tag=P-Forward,tag=P-1F+,distance=..10] P-Num 5
-scoreboard players set @e[tag=P-Forward,tag=P-1G,distance=..10] P-Num 10
-scoreboard players set @e[tag=P-Forward,tag=P-1G+,distance=..10] P-Num 15
-scoreboard players set @e[tag=P-Forward,tag=P-1A,distance=..10] P-Num 20
-scoreboard players set @e[tag=P-Forward,tag=P-1A+,distance=..10] P-Num 25
-scoreboard players set @e[tag=P-Forward,tag=P-1B,distance=..10] P-Num 30
-scoreboard players set @e[tag=P-Forward,tag=P-1C,distance=..10] P-Num 40
-scoreboard players set @e[tag=P-Forward,tag=P-1C+,distance=..10] P-Num 45
-scoreboard players set @e[tag=P-Forward,tag=P-1D,distance=..10] P-Num 50
-scoreboard players set @e[tag=P-Forward,tag=P-1D+,distance=..10] P-Num 55
-scoreboard players set @e[tag=P-Forward,tag=P-1E,distance=..10] P-Num 60
-scoreboard players set @e[tag=P-Forward,tag=P-1,tag=P-1F,distance=..10] P-Num 70
-scoreboard players set @e[tag=P-Forward,tag=P-2,tag=P-1F,distance=..10] P-Num 80
-scoreboard players set @e[tag=P-Forward,tag=P-2F+,distance=..10] P-Num 105
-scoreboard players set @e[tag=P-Forward,tag=P-2G,distance=..10] P-Num 110
-scoreboard players set @e[tag=P-Forward,tag=P-2G+,distance=..10] P-Num 115
-scoreboard players set @e[tag=P-Forward,tag=P-2A,distance=..10] P-Num 120
-scoreboard players set @e[tag=P-Forward,tag=P-2A+,distance=..10] P-Num 125
-scoreboard players set @e[tag=P-Forward,tag=P-2B,distance=..10] P-Num 130
-scoreboard players set @e[tag=P-Forward,tag=P-2C,distance=..10] P-Num 140
-scoreboard players set @e[tag=P-Forward,tag=P-2C+,distance=..10] P-Num 145
-scoreboard players set @e[tag=P-Forward,tag=P-2D,distance=..10] P-Num 150
-scoreboard players set @e[tag=P-Forward,tag=P-2D+,distance=..10] P-Num 155
-scoreboard players set @e[tag=P-Forward,tag=P-2E,distance=..10] P-Num 160
-scoreboard players set @e[tag=P-2,tag=P-F,distance=..10] P-Num 170
-scoreboard players set @e[tag=P-2,tag=P-F++,distance=..10] P-Num 175
+# scoreboard 後々必要になっちゃった (いうて使わんかった) [ガチで使わんかった]--------------------
+#scoreboard players set @e[tag=P-Forward,tag=P-1F+,distance=..10] P-Num 5
+#scoreboard players set @e[tag=P-Forward,tag=P-1G,distance=..10] P-Num 10
+#scoreboard players set @e[tag=P-Forward,tag=P-1G+,distance=..10] P-Num 15
+#scoreboard players set @e[tag=P-Forward,tag=P-1A,distance=..10] P-Num 20
+#scoreboard players set @e[tag=P-Forward,tag=P-1A+,distance=..10] P-Num 25
+#scoreboard players set @e[tag=P-Forward,tag=P-1B,distance=..10] P-Num 30
+#scoreboard players set @e[tag=P-Forward,tag=P-1C,distance=..10] P-Num 40
+#scoreboard players set @e[tag=P-Forward,tag=P-1C+,distance=..10] P-Num 45
+#scoreboard players set @e[tag=P-Forward,tag=P-1D,distance=..10] P-Num 50
+#scoreboard players set @e[tag=P-Forward,tag=P-1D+,distance=..10] P-Num 55
+#scoreboard players set @e[tag=P-Forward,tag=P-1E,distance=..10] P-Num 60
+#scoreboard players set @e[tag=P-Forward,tag=P-1,tag=P-1F,distance=..10] P-Num 70
+#scoreboard players set @e[tag=P-Forward,tag=P-2,tag=P-1F,distance=..10] P-Num 80
+#scoreboard players set @e[tag=P-Forward,tag=P-2F+,distance=..10] P-Num 105
+#scoreboard players set @e[tag=P-Forward,tag=P-2G,distance=..10] P-Num 110
+#scoreboard players set @e[tag=P-Forward,tag=P-2G+,distance=..10] P-Num 115
+#scoreboard players set @e[tag=P-Forward,tag=P-2A,distance=..10] P-Num 120
+#scoreboard players set @e[tag=P-Forward,tag=P-2A+,distance=..10] P-Num 125
+#scoreboard players set @e[tag=P-Forward,tag=P-2B,distance=..10] P-Num 130
+#scoreboard players set @e[tag=P-Forward,tag=P-2C,distance=..10] P-Num 140
+#scoreboard players set @e[tag=P-Forward,tag=P-2C+,distance=..10] P-Num 145
+#scoreboard players set @e[tag=P-Forward,tag=P-2D,distance=..10] P-Num 150
+#scoreboard players set @e[tag=P-Forward,tag=P-2D+,distance=..10] P-Num 155
+#scoreboard players set @e[tag=P-Forward,tag=P-2E,distance=..10] P-Num 160
+#scoreboard players set @e[tag=P-2,tag=P-F,distance=..10] P-Num 170
+#scoreboard players set @e[tag=P-2,tag=P-F++,distance=..10] P-Num 175
 
-scoreboard players set @e[tag=P-Back,tag=P-1F+,distance=..10] P-Num 6
-scoreboard players set @e[tag=P-Back,tag=P-1G,distance=..10] P-Num 11
-scoreboard players set @e[tag=P-Back,tag=P-1G+,distance=..10] P-Num 16
-scoreboard players set @e[tag=P-Back,tag=P-1A,distance=..10] P-Num 21
-scoreboard players set @e[tag=P-Back,tag=P-1A+,distance=..10] P-Num 26
-scoreboard players set @e[tag=P-Back,tag=P-1B,distance=..10] P-Num 31
-scoreboard players set @e[tag=P-Back,tag=P-1C,distance=..10] P-Num 41
-scoreboard players set @e[tag=P-Back,tag=P-1C+,distance=..10] P-Num 46
-scoreboard players set @e[tag=P-Back,tag=P-1D,distance=..10] P-Num 51
-scoreboard players set @e[tag=P-Back,tag=P-1D+,distance=..10] P-Num 56
-scoreboard players set @e[tag=P-Back,tag=P-1E,distance=..10] P-Num 61
-scoreboard players set @e[tag=P-Back,tag=P-1,tag=P-1F,distance=..10] P-Num 71
-scoreboard players set @e[tag=P-Back,tag=P-2,tag=P-1F,distance=..10] P-Num 81
-scoreboard players set @e[tag=P-Back,tag=P-2F+,distance=..10] P-Num 106
-scoreboard players set @e[tag=P-Back,tag=P-2G,distance=..10] P-Num 111
-scoreboard players set @e[tag=P-Back,tag=P-2G+,distance=..10] P-Num 116
-scoreboard players set @e[tag=P-Back,tag=P-2A,distance=..10] P-Num 121
-scoreboard players set @e[tag=P-Back,tag=P-2A+,distance=..10] P-Num 126
-scoreboard players set @e[tag=P-Back,tag=P-2B,distance=..10] P-Num 131
-scoreboard players set @e[tag=P-Back,tag=P-2C,distance=..10] P-Num 141
-scoreboard players set @e[tag=P-Back,tag=P-2C+,distance=..10] P-Num 146
-scoreboard players set @e[tag=P-Back,tag=P-2D,distance=..10] P-Num 151
-scoreboard players set @e[tag=P-Back,tag=P-2D+,distance=..10] P-Num 156
-scoreboard players set @e[tag=P-Back,tag=P-2E,distance=..10] P-Num 161
+#scoreboard players set @e[tag=P-Back,tag=P-1F+,distance=..10] P-Num 6
+#scoreboard players set @e[tag=P-Back,tag=P-1G,distance=..10] P-Num 11
+#scoreboard players set @e[tag=P-Back,tag=P-1G+,distance=..10] P-Num 16
+#scoreboard players set @e[tag=P-Back,tag=P-1A,distance=..10] P-Num 21
+#scoreboard players set @e[tag=P-Back,tag=P-1A+,distance=..10] P-Num 26
+#scoreboard players set @e[tag=P-Back,tag=P-1B,distance=..10] P-Num 31
+#scoreboard players set @e[tag=P-Back,tag=P-1C,distance=..10] P-Num 41
+#scoreboard players set @e[tag=P-Back,tag=P-1C+,distance=..10] P-Num 46
+#scoreboard players set @e[tag=P-Back,tag=P-1D,distance=..10] P-Num 51
+#scoreboard players set @e[tag=P-Back,tag=P-1D+,distance=..10] P-Num 56
+#scoreboard players set @e[tag=P-Back,tag=P-1E,distance=..10] P-Num 61
+#scoreboard players set @e[tag=P-Back,tag=P-1,tag=P-1F,distance=..10] P-Num 71
+#scoreboard players set @e[tag=P-Back,tag=P-2,tag=P-1F,distance=..10] P-Num 81
+#scoreboard players set @e[tag=P-Back,tag=P-2F+,distance=..10] P-Num 106
+#scoreboard players set @e[tag=P-Back,tag=P-2G,distance=..10] P-Num 111
+#scoreboard players set @e[tag=P-Back,tag=P-2G+,distance=..10] P-Num 116
+#scoreboard players set @e[tag=P-Back,tag=P-2A,distance=..10] P-Num 121
+#scoreboard players set @e[tag=P-Back,tag=P-2A+,distance=..10] P-Num 126
+#scoreboard players set @e[tag=P-Back,tag=P-2B,distance=..10] P-Num 131
+#scoreboard players set @e[tag=P-Back,tag=P-2C,distance=..10] P-Num 141
+#scoreboard players set @e[tag=P-Back,tag=P-2C+,distance=..10] P-Num 146
+#scoreboard players set @e[tag=P-Back,tag=P-2D,distance=..10] P-Num 151
+#scoreboard players set @e[tag=P-Back,tag=P-2D+,distance=..10] P-Num 156
+#scoreboard players set @e[tag=P-Back,tag=P-2E,distance=..10] P-Num 161
 
 scoreboard players add $Base P-CNum 1
 scoreboard players operation @e[tag=P-Setup,distance=..0.0001] P-CNum = $Base P-CNum
 scoreboard players operation @e[tag=P-Setup,distance=..10] P-CNum = @e[tag=P-Setup,distance=..0.0001] P-CNum
 
+# 当たり判定用村人
+# Tick の方で処理してくれるようになった
 
-# 当たり判定用 village
-execute as @e[tag=P-Setup,distance=..10] run function piano:villager/check
-
+# particle
+execute at @e[tag=P-Setup,distance=..10] run particle minecraft:cloud ~ ~1.5 ~ 0.3 0 0.3 0.02 2 normal @a
+execute at @e[tag=P-White,tag=P-Setup,distance=..10] run particle minecraft:wax_off ~ ~1.8 ~ 0.3 0 0.3 1 1 normal @a
 
 
 # =====================================================

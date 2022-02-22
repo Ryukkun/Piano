@@ -9,7 +9,7 @@ execute as @s[tag=P-NoVil] run function piano:villager/white-summon
 # Tags , Score
 data modify entity @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] Tags append from entity @s Tags[]
 team join P-Never-Col @e[tag=P-Vil-Setup,distance=..0.0001]
-scoreboard players operation @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] P-Num = @s P-Num
+#scoreboard players operation @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] P-Num = @s P-Num
 scoreboard players operation @e[tag=P-Vil-Setup,distance=..0.0001,limit=1] P-CNum = @s P-CNum
 
 
