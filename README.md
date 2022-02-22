@@ -6,8 +6,8 @@
   
 ## ◈ 使い方
 ### 1. コマンド
-  `/function #piano:summon` ピアノ呼び出し<br>
-  `/function #piano:delete` ピアノを消す<br><br>
+  `/function #piano:summon` 目の前にピアノを召喚します<br>
+  `/function #piano:delete` このコマンドを実行した後最初にクリックされたピアノを削除します<br><br>
 
 ### 2. 鍵盤操作
   - 鍵盤をクリックすることで音を鳴らすことができます。<br>
