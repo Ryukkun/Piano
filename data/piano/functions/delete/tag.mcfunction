@@ -1,0 +1,2 @@
+tag @s add P-Delete
+tellraw @s [{"text":" P","color":"dark_gray"},{"text":"iano","color":"white"},{"text":" >>  ","color":"dark_gray"},{"text":"消したい","color":"gray"},{"text":"Piano","color":"white"},{"text":"を ","color":"gray"},{"text":"右クリック","color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"言い忘れていたけど、左クリックでも大丈夫です :]"}]}},{"text":"してください。","color":"gray"}]

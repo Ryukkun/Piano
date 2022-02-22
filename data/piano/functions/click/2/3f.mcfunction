@@ -3,4 +3,5 @@
 execute positioned ^ ^ ^2 as @e[sort=nearest,limit=2] at @e[tag=P-2F,sort=nearest,distance=..10,limit=1] run playsound minecraft:block.note_block.harp ambient @a ~ ~ ~ 2 1.887749 0
 
 
-advancement revoke @s only piano:click_vil/2/3f
+# advancements 剥奪
+function piano:revoke-adv

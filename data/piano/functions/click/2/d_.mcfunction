@@ -8,6 +8,10 @@ execute positioned ^ ^ ^2 as @e[type=armor_stand,tag=P-2D+,distance=..10] run fu
 # 鍵盤の押し込み
 execute positioned ^ ^ ^2 as @e[type=armor_stand,tag=P-Back,tag=P-2D+,distance=..10,sort=nearest,limit=1] at @s run function piano:push/black-down
 
+# delete machine
+execute as @s[tag=P-Delete] positioned ^ ^ ^2 as @e[type=armor_stand,tag=P-2D+,distance=..10,sort=nearest,limit=1] at @s as @e[tag=P-Bord,distance=..10] if score @s P-CNum = @e[tag=P-Bord,distance=..0.0001,limit=1] P-CNum at @s run function piano:delete/kill
+tag @s remove P-Delete
 
 
-advancement revoke @s only piano:click_vil/2/d_
+# advancements 剥奪
+function piano:revoke-adv
