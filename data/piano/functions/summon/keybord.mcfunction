@@ -2,12 +2,12 @@
 #   [P-Bord]
 #
 #       |--------------------------------------------------------------------------------------------------------------------|
-#       |        | P-2F+ |       | P-2G+ |       | P-2A+ |       |       | P-2C+ |       | P-2D+ |           |               |
-#       |        |  106  |       |  116  |       |  126  |       |       |  146  |       |  156  |           |     P-2F++    |
-#       |        |       |       |       |       |       |       |       |       |       |       |           |               |
-#       |        |       |       |       |       |       |       |       |       |       |       |           |      171      |
-#  P-1  |        |       |       |       |       |       |       |       |       |       |       |           |               |
-#       |         ―――――――         ―――――――         ―――――――        |        ―――――――         ―――――――            |               |
+#       |        | P-2F+ |       | P-2G+ |       | P-2A+ |       |       | P-2C+ |       | P-2D+ |           |       |       |
+#       |        |  106  |       |  116  |       |  126  |       |       |  146  |       |  156  |           |       | P-2F++|
+#       |        |       |       |       |       |       |       |       |       |       |       |           |       |       |
+#       |        |       |       |       |       |       |       |       |       |       |       |           |       |  171  |
+#  P-1  |        |       |       |       |       |       |       |       |       |       |       |           |       |       |
+#       |         ―――――――         ―――――――         ―――――――        |        ―――――――         ―――――――            |        -------|
 #       |    P-2F    |     P-2G      |     P-2A      |   P-2B    |   P-2C    |     P-2D      |     P-2E      |     P-2F      |
 #       |     80     |      110      |      120      |    130    |    140    |      150      |      160      |      170      |
 #       |====================================================================================================================|
@@ -27,97 +27,103 @@
 #
 # armor_stand 設置  =========================================================================================================
 
-# 一段目 白鍵 前  
-summon armor_stand ^ ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Center","P-White","P-None"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-0.625 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1G"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.25 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1A"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.875 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1B"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-2.5 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1C"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.125 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1D"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.75 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1E"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-4.375 ^ ^ {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
+# # 一段目 白鍵 前  
+# summon block_display ^ ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-Center","P-White","P-None"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-0.625 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1G"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-1.25 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1A"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-1.875 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1B"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-2.5 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1C"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-3.125 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1D"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-3.75 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1E"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-4.375 ^ ^ {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-1","P-1F"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
 
 
 
 # 一段目 白鍵 奥
-summon armor_stand ^ ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-None"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-0.625 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1G"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.25 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1A"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.875 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1B"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-2.5 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1C"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.125 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1D"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.75 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1E"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-4.375 ^ ^0.625 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_slab",Count:1b}],NoGravity:1b,Marker:1b}
+summon block_display ^ ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-Center","P-White","P-Back","P-1","P-None"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-0.625 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1G"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-1.25 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1A"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-1.875 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1B"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-2.5 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1C"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-3.125 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1D"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-3.75 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1E"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-4.375 ^ ^0.625 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-1","P-1F"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.3f]},block_state:{Name:"minecraft:quartz_block"}}
 
 # 一段目 黒鍵 {FGAB:0.66,CDE:}
 
 #####  例: 後
 #####  例: 前
 
-summon armor_stand ^-0.2775 ^0.75 ^0.75 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1F+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-0.2775 ^0.75 ^0.45 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1F+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-0.2775 ^0.75 ^0.75 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1F+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.81f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-0.2775 ^0.75 ^0.45 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1F+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-0.9375 ^0.75 ^0.75 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1G+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-0.9375 ^0.75 ^0.45 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1G+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-0.9375 ^0.75 ^0.75 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1G+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.81f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-0.9375 ^0.75 ^0.45 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1G+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-1.5975 ^0.75 ^0.75 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1A+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-1.5975 ^0.75 ^0.45 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1A+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-1.5975 ^0.75 ^0.75 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1A+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.81f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-1.5975 ^0.75 ^0.45 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1A+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-2.7775 ^0.75 ^0.75 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1C+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-2.7775 ^0.75 ^0.45 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1C+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-2.7775 ^0.75 ^0.75 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1C+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.81f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-2.7775 ^0.75 ^0.45 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1C+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-3.486 ^0.75 ^0.75 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1D+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-3.486 ^0.75 ^0.45 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1D+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-3.486 ^0.75 ^0.75 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1D+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.81f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-3.486 ^0.75 ^0.45 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-1","P-1D+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+
+summon block_display ^-4.536 ^0.75 ^0.75 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-1","P-1F++"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.34f,0.38f,0.81f]},block_state:{Name:"minecraft:black_concrete"}}
 
 
 # 二段目 白鍵 前  -------------------------------------------------------------
-summon armor_stand ^ ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-1F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-0.625 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2G"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.25 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2A"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.875 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2B"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-2.5 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2C"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.125 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2D"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.75 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2E"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-4.375 ^0.1 ^1.25 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2F","P-3F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
+# summon block_display ^ ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-1F"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-0.625 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2G"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-1.25 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2A"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-1.875 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2B"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-2.5 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2C"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-3.125 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2D"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-3.75 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2E"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+# summon block_display ^-4.375 ^0.1 ^1.25 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Forward","P-2","P-2F","P-3F"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.3125f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
 
 # 二段目 白鍵 奥
-summon armor_stand ^ ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-1F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-0.625 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2G"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.25 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2A"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-1.875 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2B"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-2.5 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2C"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.125 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2D"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-3.75 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2E"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
-summon armor_stand ^-4.375 ^0.1 ^1.875 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2F++","P-3F"],ArmorItems:[{},{},{},{id:"minecraft:quartz_block",Count:1b}],NoGravity:1b,Marker:1b}
+summon block_display ^ ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-1F"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-0.625 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2G"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-1.25 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2A"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-1.875 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2B"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-2.5 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2C"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-3.125 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2D"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-3.75 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2E"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
+summon block_display ^-4.375 ^0.1 ^1.875 {Silent:1b,Tags:["P-Bord","P-Setup","P-White","P-Back","P-2","P-2F","P-3F"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.625f,0.625f,1.25f]},block_state:{Name:"minecraft:quartz_block"}}
 
 # 二段目 黒鍵 {FGAB:0.66,CDE:}1.25
 
 #####  例: 後
 #####  例: 前
 
-summon armor_stand ^-0.2775 ^1.2 ^2 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2F+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-0.2775 ^1.2 ^1.7 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2F+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-0.2775 ^1.2 ^2 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2F+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-0.2775 ^1.2 ^1.7 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2F+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-0.9375 ^1.2 ^2 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2G+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-0.9375 ^1.2 ^1.7 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2G+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-0.9375 ^1.2 ^2 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2G+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-0.9375 ^1.2 ^1.7 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2G+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-1.5975 ^1.2 ^2 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2A+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-1.5975 ^1.2 ^1.7 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2A+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-1.5975 ^1.2 ^2 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2A+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-1.5975 ^1.2 ^1.7 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2A+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-2.7775 ^1.2 ^2 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2C+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-2.7775 ^1.2 ^1.7 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2C+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-2.7775 ^1.2 ^2 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2C+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-2.7775 ^1.2 ^1.7 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2C+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
-summon armor_stand ^-3.486 ^1.2 ^2 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2D+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
-summon armor_stand ^-3.486 ^1.2 ^1.7 {Silent:1b,Invisible:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2D+"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],NoGravity:1b,Marker:1b,Small:1b}
+summon block_display ^-3.486 ^1.2 ^2 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2D+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+#summon block_display ^-3.486 ^1.2 ^1.7 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Forward","P-2","P-2D+"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.38f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
+
+summon block_display ^-4.536 ^1.2 ^2 {Silent:1b,Tags:["P-Bord","P-Setup","P-Black","P-Back","P-2","P-2F++"],NoGravity:1b,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.34f,0.38f,0.76f]},block_state:{Name:"minecraft:black_concrete"}}
 
 # =========================================================================================================
 
 
 
 # 向き      ------------------------------------------
-tp @e[tag=P-Setup,distance=..0.0001] ~ ~ ~ ~ ~
-execute as @e[tag=P-Setup,distance=..10] at @s rotated as @e[tag=P-Setup,tag=P-Center,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
-
+#tp @e[tag=P-Setup,tag=P-Center,distance=..1,limit=1] ~ ~ ~ ~ ~
+execute as @e[tag=P-Setup,distance=..10] positioned as @s rotated ~180 ~ run tp @s ^ ^0.5 ^-0.312499 ~ ~
+execute as @e[tag=P-Setup,tag=P-White,distance=..10] at @s run tp @s ^-0.3125 ^0.6 ^
+execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run tp @s ^-0.19 ^ ^0.125
+execute as @e[tag=P-Setup,tag=P-1,distance=..10] at @s run tp @s ^ ^ ^-0.05
 
 
 # scoreboard 後々必要になっちゃった (いうて使わんかった) [ガチで使わんかった]--------------------
