@@ -1,3 +1,8 @@
-particle minecraft:cloud ~ ~1 ~ 0.3 0 0.3 0.02 2
-execute as @s[tag=P-White] run particle minecraft:end_rod ~ ~1.8 ~ 0.3 0 0.3 0.04 2 normal @a
-kill @s
+# piano削除用
+#
+# as Player
+# at @e[tag=P-Bord]
+#---------------------------------------
+
+execute at @s as @e[tag=P-Bord,distance=..10] if score @s P-CNum = @e[tag=P-Bord,distance=..0.0001,limit=1] P-CNum at @s run function piano:delete/kill_effect
+tag @s remove P-Delete
