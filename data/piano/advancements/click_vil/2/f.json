@@ -26,7 +26,7 @@
       ]
     ],
     "rewards": {
-      "function": "piano:click/3/f"
+      "function": "piano:click/2/f"
     }
   }
   

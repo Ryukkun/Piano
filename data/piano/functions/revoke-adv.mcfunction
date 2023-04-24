@@ -20,9 +20,8 @@ advancement revoke @s only piano:click_vil/2/d_
 advancement revoke @s only piano:click_vil/2/d
 advancement revoke @s only piano:click_vil/2/e
 advancement revoke @s only piano:click_vil/2/f_
+advancement revoke @s only piano:click_vil/2/f
 advancement revoke @s only piano:click_vil/2/g_
 advancement revoke @s only piano:click_vil/2/g
 
-advancement revoke @s only piano:click_vil/3/f
 advancement revoke @s only piano:click_vil/3/f_
-advancement revoke @s only piano:click_vil/3/f_bord
