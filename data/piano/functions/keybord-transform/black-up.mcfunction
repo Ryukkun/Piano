@@ -1,5 +1,5 @@
-execute positioned ^ ^ ^2 rotated ~ 0 positioned ^ ^ ^-2 run tp ~ ~ ~
-data merge entity @s {Pose:{Head:[0f,0f,0f]}}
+# as @e[tag=P-Bord, tag=P-White, score={P-Push=8..12}]
+# at @s
 
-execute positioned ^ ^ ^-0.3 as @e[type=armor_stand,tag=P-Forward,distance=..0.0001] run data merge entity @s {Pose:{Head:[0f,0f,0f]}}
-execute positioned ^ ^ ^-0.3 as @e[type=armor_stand,tag=P-Forward,distance=..0.0001] positioned ^ ^ ^2.3 rotated ~ 0 positioned ^ ^ ^-2.3 run tp ~ ~ ~
+data modify entity @s[scores={P-Push=8}] transformation.left_rotation set value [0f, 0f, 0f, 1f]
+data modify entity @s[scores={P-Push=8}] transformation.translation set value [0f, 0f, 0f]

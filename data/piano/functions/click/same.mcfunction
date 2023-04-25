@@ -1,9 +1,9 @@
 # as P-Bord
-# at Player
+# at Player oe None
 #
 
 # Sounds
-execute at @s as @e[sort=nearest,limit=3] run function piano:sounds/piano
+execute at @s at @e[sort=nearest,limit=3] run function piano:sounds/piano
 
 # 鍵盤の押し込み
 scoreboard players set @s P-Push 0
@@ -13,4 +13,4 @@ execute if entity @p[tag=P-Delete,distance=..0.00001] run function piano:delete/
 
 
 # advancements 剥奪
-execute as @p run function piano:revoke-adv
+execute as @p[distance=..0.00001] run function piano:revoke-adv

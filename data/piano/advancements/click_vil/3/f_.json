@@ -5,7 +5,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"P-2F++\"]}"
+            "nbt": "{Tags:[\"P-3F+\"]}"
           }
         }
       },
@@ -14,7 +14,7 @@
         "conditions": {
           "entity": {
             "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"P-2F++\"]}"
+            "nbt": "{Tags:[\"P-3F+\"]}"
           }
         }
       }

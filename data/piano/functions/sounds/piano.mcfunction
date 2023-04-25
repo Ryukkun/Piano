@@ -27,4 +27,4 @@ execute as @s[tag=P-2D+] run playsound minecraft:block.note_block.harp ambient @
 execute as @s[tag=P-2E] run playsound minecraft:block.note_block.harp ambient @a ~ ~ ~ 2 1.781797 0
 execute as @s[tag=P-2F] run playsound minecraft:block.note_block.harp ambient @a ~ ~ ~ 2 1.887749 0
 
-execute as @s[tag=P-2F++] run playsound minecraft:block.note_block.harp ambient @a ~ ~ ~ 2 2 0
+execute as @s[tag=P-3F+] run playsound minecraft:block.note_block.harp ambient @a ~ ~ ~ 2 2 0

@@ -1,3 +1,7 @@
+# as @e[tag=P-Center]
+# at @s
+
+
 # 一段目 白鍵
 #summon interaction ^ ^ ^0.6256 {Tags:["P-Vil","P-Setup","P-Center","P-White","P-1","P-None"],width:1.25f,height:0.3125f}
 summon interaction ^-0.625 ^-0.0001 ^0.625 {Tags:["P-Vil","P-Setup","P-White","P-1","P-1G"],width:1.25f,height:0.3127f}
@@ -16,7 +20,7 @@ summon interaction ^-0.9375 ^0.75 ^0.75 {Tags:["P-Vil","P-Setup","P-Black","P-1"
 summon interaction ^-1.5975 ^0.75 ^0.75 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1A+"],width:0.38f,height:0.38f}
 summon interaction ^-2.7775 ^0.75 ^0.75 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1C+"],width:0.38f,height:0.38f}
 summon interaction ^-3.486 ^0.75 ^0.75 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1D+"],width:0.38f,height:0.38f}
-summon interaction ^-4.536 ^0.75 ^0.75 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1F++"],width:0.38f,height:0.38f}
+summon interaction ^-4.536 ^0.75 ^0.75 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-2F+"],width:0.38f,height:0.38f}
 
 # 前
 summon interaction ^-0.2775 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1F+"],width:0.38f,height:0.38f}
@@ -24,7 +28,7 @@ summon interaction ^-0.9375 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1"
 summon interaction ^-1.5975 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1A+"],width:0.38f,height:0.38f}
 summon interaction ^-2.7775 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1C+"],width:0.38f,height:0.38f}
 summon interaction ^-3.486 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1D+"],width:0.38f,height:0.38f}
-summon interaction ^-4.536 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-1F++"],width:0.38f,height:0.38f}
+summon interaction ^-4.536 ^0.75 ^1.13 {Tags:["P-Vil","P-Setup","P-Black","P-1","P-2F+"],width:0.38f,height:0.38f}
 
 
 
@@ -46,7 +50,7 @@ summon interaction ^-0.9375 ^1.2 ^2 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-
 summon interaction ^-1.5975 ^1.2 ^2 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2A+"],width:0.38f,height:0.38f}
 summon interaction ^-2.7775 ^1.2 ^2 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2C+"],width:0.38f,height:0.38f}
 summon interaction ^-3.486 ^1.2 ^2 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2D+"],width:0.38f,height:0.38f}
-summon interaction ^-4.536 ^1.2 ^2 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2F++"],width:0.38f,height:0.38f}
+summon interaction ^-4.536 ^1.2 ^2 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-3F+"],width:0.38f,height:0.38f}
 
 # 前
 summon interaction ^-0.2775 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2F+"],width:0.38f,height:0.38f}
@@ -54,7 +58,7 @@ summon interaction ^-0.9375 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2",
 summon interaction ^-1.5975 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2A+"],width:0.38f,height:0.38f}
 summon interaction ^-2.7775 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2C+"],width:0.38f,height:0.38f}
 summon interaction ^-3.486 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2D+"],width:0.38f,height:0.38f}
-summon interaction ^-4.536 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-2F++"],width:0.38f,height:0.38f}
+summon interaction ^-4.536 ^1.2 ^2.38 {Tags:["P-Vil","P-Setup","P-Black","P-2","P-3F+"],width:0.38f,height:0.38f}
 
 execute as @e[tag=P-Setup,distance=..10] positioned as @s rotated ~180 ~ run tp @s ^0.625 ^0.5 ^1.25 ~ ~
 execute as @e[tag=P-Setup,tag=P-White,distance=..10] at @s run tp @s ^ ^-0.5 ^0.05
@@ -63,6 +67,3 @@ execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run tp @s ^-0.3125 ^-
 
 scoreboard players operation @e[tag=P-Setup,distance=..10] P-CNum = @s P-CNum
 tag @e[tag=P-Setup,distance=..10] remove P-Setup
-# execute as @e[tag=P-Setup,tag=P-White,distance=..10] at @s run tp @s ^-0.3125 ^0.6 ^
-# execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run tp @s ^-0.19 ^ ^0.125
-# execute as @e[tag=P-Setup,tag=P-1,distance=..10] at @s run tp @s ^ ^ ^-0.05
