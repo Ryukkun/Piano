@@ -73,7 +73,7 @@ summon block_display ^-4.536 ^1.2 ^2 {Tags:["P-Bord","P-Setup","P-Black","P-2","
 
 # 向き      ------------------------------------------
 #tp @e[tag=P-Setup,tag=P-Center,distance=..1,limit=1] ~ ~ ~ ~ ~
-execute as @e[tag=P-Setup,distance=..10] positioned as @s rotated ~180 ~ run tp @s ^ ^0.5 ^-0.312499 ~ ~
+execute as @e[tag=P-Setup,distance=..10] positioned as @s rotated ~180 ~ run tp @s ^ ^0.775 ^-0.312499 ~ ~
 execute as @e[tag=P-Setup,tag=P-White,distance=..10] at @s run tp @s ^-0.3125 ^0.6 ^
 execute as @e[tag=P-Setup,tag=P-Black,distance=..10] at @s run tp @s ^-0.19 ^ ^0.125
 execute as @e[tag=P-Setup,tag=P-1,distance=..10] at @s run tp @s ^ ^ ^-0.05
